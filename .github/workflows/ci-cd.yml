@@ -29,7 +29,7 @@ jobs:
 
       - run: |
           echo "Build completed at $(date)" > build.log
-          ls -la dist/ > build.log
+          ls -la dist/ >> build.log
 
       - uses: actions/upload-artifact@v4
         with:
